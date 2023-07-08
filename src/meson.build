@@ -4,6 +4,7 @@ soundblok_sources = [
 
 soundblok = executable('soundblok_app',
                        soundblok_sources,
+                       dependencies : [wavemaker],
                        install : false,
                        )
 

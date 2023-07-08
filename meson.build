@@ -10,7 +10,9 @@ project('soundblok',
          version: '0.1')
 
 # inc = include_directories('include')
-subdir('libs')
+# subdir('libs')
+wavemaker_project = subproject('wavemaker')
+wavemaker = dependency('wavemaker')
 
 subdir('src')
 # subdir('include')
