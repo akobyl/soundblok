@@ -10,6 +10,7 @@ tests_src = [
     'soundblok_test.cpp',
 ]
 
+if not meson.is_cross_build()
 testexe = executable('testexe',
                      tests_src,
                      dependencies : [
@@ -18,3 +19,4 @@ testexe = executable('testexe',
                      )
 
 test('soundblok test', testexe, protocol : 'gtest')
+endif

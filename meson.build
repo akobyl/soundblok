@@ -1,5 +1,5 @@
 project('soundblok',
-        'c',
+        ['c', 'cpp'],
          default_options : [
          'warning_level=3',
          'werror=false',
@@ -14,8 +14,10 @@ project('soundblok',
 wavemaker_project = subproject('wavemaker')
 wavemaker = dependency('wavemaker')
 
+stm_sdk_project = subproject('sdk')
+stm_sdk = dependency('stm_sdk')
+
 subdir('src')
-# subdir('include')
 subdir('test')
 
 # Process source files
