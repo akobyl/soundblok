@@ -1,0 +1,7 @@
+[wrap-git]
+url = git@github.com:akobyl/wavemaker.git
+revision  = main
+clone-recursive = true
+
+[provide]
+wavemaker = wavemaker_dep

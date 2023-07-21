@@ -1,0 +1,7 @@
+[wrap-git]
+url = git@github.com:akobyl/SDK-ST
+revision = main
+clone-recursive = true
+
+[provide]
+stm_sdk = stm_sdk_dep

@@ -1,0 +1,7 @@
+[wrap-git]
+url = https://github.com/akobyl/FreeRTOS-Kernel
+revision = main
+clone-recursive = true
+
+[provide]
+freertos = freertos_dep
