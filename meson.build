@@ -18,7 +18,7 @@ wavemaker = dependency('wavemaker')
 
 stm_sdk_options  = [
   'family=g4',
-  'chip=stm32g491',
+  'chip=stm32g474',
   'peripherals=[gpio, adc]'
   ]
 stm_sdk_project = subproject('sdk')
@@ -36,6 +36,8 @@ freertos_project = subproject('FreeRTOS',
                               )
 freertos = dependency('freertos')
 
+# Linker settings
+link_file = files(['linker/STM32G474RETx_FLASH.ld'])
 subdir('src')
 subdir('test')
 
