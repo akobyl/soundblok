@@ -1,5 +1,5 @@
 [wrap-git]
-url = git@github.com:akobyl/SDK-ST
+url = https://github.com/akobyl/STM_SDK
 revision = main
 clone-recursive = true
 
